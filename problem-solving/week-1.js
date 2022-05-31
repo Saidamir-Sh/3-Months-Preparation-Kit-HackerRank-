@@ -9,3 +9,13 @@ There are elements, two positive, two negative and one zero. Their ratios are , 
 0.400000
 0.200000
 */
+function plusMinus(arrayInt) {
+    let arrayLength = arrayInt.length
+    let positiveInts = arrayInt.filter(n => n > 0).length
+    let negativeInts = arrayInt.filter(n => n < 0).length
+    let zero = arrayInt.filter(n => n === 0).length
+    console.log(positiveInts / arrayLength)
+
+}
+
+plusMinus([1, 1, 0, -1, -1])
