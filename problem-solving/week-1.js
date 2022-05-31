@@ -15,7 +15,8 @@ function plusMinus(arrayInt) {
     let negativeInts = arrayInt.filter(n => n < 0).length
     let zero = arrayInt.filter(n => n === 0).length
     console.log(positiveInts / arrayLength)
-
+    console.log(negativeInts / arrayLength)
+    console.log(zero / arrayLength)
 }
 
 plusMinus([1, 1, 0, -1, -1])
