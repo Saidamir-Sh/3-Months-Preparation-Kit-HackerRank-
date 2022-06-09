@@ -52,3 +52,9 @@ A single string that represents a time in -hour clock format (i.e.: or).
 Constraints
     All input times are valid
 */
+
+function timeConversion(s) {
+    console.log(s)
+}
+
+timeConversion('07:05:45PM')
