@@ -54,7 +54,19 @@ Constraints
 */
 
 function timeConversion(s) {
-    console.log(s)
+    let format = s.substring(s.length - 2)
+    let hour = s.substring(0, 2)
+    let minutes = s.substring(3, 5)
+    let seconds = s.substring(6, 8)
+
+    if(format === 'PM') {
+        hour = +hour + 12 < 24 ? +hour + 12 : '12'
+    }
+    if(format === 'AM') {
+        hour = hour == 12 ? '00' : hour
+    }
+    let time = `${hour}:${minutes}:${seconds}`
+    console.log(time)
 }
 
 timeConversion('07:05:45PM')
